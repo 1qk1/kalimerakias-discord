@@ -1,0 +1,6 @@
+node_modules
+.env
+src/downloads/*
+src/mixed/*
+src/nightcore/*
+.npm

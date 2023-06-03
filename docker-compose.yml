@@ -1,0 +1,23 @@
+version: '2'
+services:
+  app:
+    build: .
+    environment:
+      NODE_ENV: development
+    command: npm run dev
+    volumes:
+      - .:/home/app
+      - /home/app/node_modules
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:3.6
+    volumes:
+      - mongo-volume:/data/db
+  # mongo-express:
+  #   image: mongo-express
+  #   ports:
+  #     - 8081:8081
+
+volumes:
+  mongo-volume:

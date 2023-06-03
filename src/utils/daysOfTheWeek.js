@@ -1,0 +1,1 @@
+module.exports = ["deutera", "triti", "tetarti", "pempti", "paraskevi", "savvato", "kyriaki"]
