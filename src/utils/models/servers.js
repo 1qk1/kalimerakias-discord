@@ -24,7 +24,7 @@ class ServerState {
         })
       })
       this.client = null
-      this.prefix = process.env.PREFIX || "#"
+      this.prefix = process.env.PREFIX || "!"
     })
   }
 
