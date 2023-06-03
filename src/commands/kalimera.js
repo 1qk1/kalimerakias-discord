@@ -6,7 +6,7 @@ const getKalimeraDay = require('../utils/eikones.top/getKalimeraDay')
 module.exports = {
   name: 'kalimera',
   description: `Sends a kalimera.`,
-  usage: `\`${process.env.PREFIX}kalimera\` or \n\`${process.env.PREFIX}kalimera tetarti\``,
+  usage: `\`${process.env.PREFIX}kalimera\` or \n\`${process.env.PREFIX}kalimera tetarti\`. The days of the week supported are ${daysOfTheWeek.join(', ')}.`,
   async execute(server, message, args) {
     const day = args[0]
     if (day && daysOfTheWeek.includes(args[0])) {
