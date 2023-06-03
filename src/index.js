@@ -26,10 +26,10 @@ mongoose.connect(process.env.MONGO_URL, {
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`${state.prefix}help and ${state.prefix}play`, { type: "LISTENING" });
+  client.user.setActivity(`${state.prefix}help and ${state.prefix}kalimera`, { type: "LISTENING" });
 });
 client.on("guildCreate", () => {
-  client.user.setActivity(`${state.prefix}help and ${state.prefix}play`, { type: "LISTENING" });
+  client.user.setActivity(`${state.prefix}help and ${state.prefix}kalimera`, { type: "LISTENING" });
 });
 
 client.on("message", async message => {
